@@ -1,0 +1,60 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <script type="text/javascript" src="script.js" defer ></script>
+    <style type="text/css" media="screen">
+      html {
+          height: 100%;
+      }
+      body {
+          height: 100%;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          font-size: 120px;
+          font-family: sans;
+          flex-direction: column;
+      }
+      #board {
+          align-self: center;
+          width: 500px;
+          height: 500px;
+          border: 3px solid;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr; 
+      }
+      .kafelek {
+          display: flex;
+          justify-content: center;
+          border: 3px solid;
+          cursor: pointer;
+      }
+      p {
+          margin: 0;
+          height: 144px;
+          align-self: center;
+          cursor: pointer;
+      }
+      #results {
+          font-size: 70px;
+          margin-top: 70px;
+          text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="board">
+      <div class="kafelek"><p></p></div>
+      <div class="kafelek"><p></p></div>
+      <div class="kafelek"><p></p></div>
+      <div class="kafelek"><p></p></div>
+      <div class="kafelek"><p></p></div>
+      <div class="kafelek"><p></p></div>
+      <div class="kafelek"><p></p></div>
+      <div class="kafelek"><p></p></div>
+      <div class="kafelek"><p></p></div>
+    </div>
+    <div id="results">Click to play</div>
+  </body>
+</html>
