@@ -1,7 +1,7 @@
 <!Doctype html>
 <html>
   <head>
-    <title>Tic Tac Toe</title>
+    <title>Ultimate Tic Tac Toe</title>
     <script type="text/javascript" src="script.js" defer ></script>
     <style type="text/css" media="screen">
       html {
@@ -17,6 +17,7 @@
           flex-direction: column;
       }
       #board {
+          margin: 40px;
           align-self: center;
           width: 500px;
           height: 500px;
@@ -37,13 +38,24 @@
           cursor: pointer;
       }
       #results {
-          font-size: 70px;
-          margin-top: 70px;
           text-align: center;
+          font-size: 50px;
+      }
+      .title {
+          text-align: center;
+          font-size: 50px;
+      }
+      button {
+          position: relative;
+          top: 7%;
+          left: 47%;
+          width: 200px;
+          height: 50px;
       }
     </style>
   </head>
   <body>
+    <div class= "title">Unbeatable algorithm</div>
     <div id="board">
       <div class="kafelek"><p></p></div>
       <div class="kafelek"><p></p></div>
@@ -56,5 +68,6 @@
       <div class="kafelek"><p></p></div>
     </div>
     <div id="results">Click to play</div>
+    <button onclick="window.location.reload();">Again?</button>
   </body>
 </html>
